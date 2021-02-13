@@ -42,7 +42,8 @@ app.get("/:word/echo", (req, res) => {
 app
   .route("/name")
   .get((req, res) => {
-    res.json({ name: `${req.query.firstname} ${req.query.lastname}` });
+    var name = req.query.firstname + " " + req.query.lastname;
+    res.json({ name: name });
   })
   .post(() => {});
 
