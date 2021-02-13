@@ -2,7 +2,8 @@ var express = require("express");
 var app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello Express");
+  path = __dirname + "/views/index.html";
+  res.sendFile(path);
 });
 
 module.exports = app;
