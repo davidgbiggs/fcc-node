@@ -40,11 +40,11 @@ app.get("/:word/echo", (req, res) => {
 });
 
 app
-  .route("/name")
-  .get((req, res) => {
+  //   .route("/name")
+  .get("/name", (req, res) => {
     var name = req.query.firstname + " " + req.query.lastname;
     res.json({ name: name });
-  })
-  .post(() => {});
+  });
+//   .post(() => {});
 
 module.exports = app;
