@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-const dotenv = require("dotenv");
+var dotenv = require("dotenv");
 dotenv.config();
 
 // app.use(express.static(path.join(__dirname, "public")));
